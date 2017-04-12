@@ -109,40 +109,40 @@ Then you will get the response in JSON like below.
 
 ```json
 {
-content: [
-{
-runningId: "7c08973d-bed4-4cbd-9c28-9282a02a6032",
-latitude: 38.9093216,
-longitude: -77.0036435,
-runningDistance: 39492,
-totalRunningTime: 2139.25,
-heartRate: 194,
-timestamp: 1491072635000,
-userInfo: {
-userId: 0,
-address: "504 CS Street, Mountain View, CA 88888",
-name: "ross0"
-},
-healthWarningLevel: "HIGH"
-}
-],
-last: true,
-totalElements: 1,
-totalPages: 1,
-sort: [
-{
-direction: "DESC",
-property: "healthWarningLevel",
-ignoreCase: false,
-nullHandling: "NATIVE",
-ascending: false,
-descending: true
-}
-],
-first: true,
-numberOfElements: 1,
-size: 2,
-number: 0
+    content: [
+        {
+            runningId: "7c08973d-bed4-4cbd-9c28-9282a02a6032",
+            latitude: 38.9093216,
+            longitude: -77.0036435,
+            runningDistance: 39492,
+            totalRunningTime: 2139.25,
+            heartRate: 194,
+            timestamp: 1491072635000,
+            userInfo: {
+                userId: 0,
+                address: "504 CS Street, Mountain View, CA 88888",
+                name: "ross0"
+            },
+            healthWarningLevel: "HIGH"
+        }
+    ],
+        last: true,
+        totalElements: 1,
+        totalPages: 1,
+        sort: [
+            {
+                direction: "DESC",
+                property: "healthWarningLevel",
+                ignoreCase: false,
+                nullHandling: "NATIVE",
+                ascending: false,
+                descending: true
+            }
+        ],
+    first: true,
+    numberOfElements: 1,
+    size: 2,
+    number: 0
 }
 ```
 Everything is the same for http://localhost/running_info, which return all data without filtering.
@@ -152,14 +152,14 @@ There is also an API returning only a part of the information. The request shoul
 The simple response example is below.
 ```json
 [
-{
-runningId: "7c08973d-bed4-4cbd-9c28-9282a02a6032",
-totalRunningTime: 2139.25,
-heartRate: 186,
-userId: 0,
-userName: "ross0",
-userAddress: "504 CS Street, Mountain View, CA 88888",
-healthWarningLevel: "HIGH"
-}
+    {
+        runningId: "7c08973d-bed4-4cbd-9c28-9282a02a6032",
+        totalRunningTime: 2139.25,
+        heartRate: 186,
+        userId: 0,
+        userName: "ross0",
+        userAddress: "504 CS Street, Mountain View, CA 88888",
+        healthWarningLevel: "HIGH"
+    }
 ]
 ```
