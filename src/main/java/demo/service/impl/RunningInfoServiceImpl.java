@@ -38,4 +38,9 @@ public class RunningInfoServiceImpl implements RunningInfoService {
     public void deleteByRunningId(String runningId) {
         this.runningInfoRepo.delete(runningId);
     }
+
+    @Override
+    public Page<RunningInformation> findAllByRunningId(String runningId, Pageable pageable) {
+        return this.runningInfoRepo.findAllByRunningId(runningId, pageable);
+    }
 }
