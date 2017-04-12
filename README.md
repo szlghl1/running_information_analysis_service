@@ -1,4 +1,4 @@
-#Running Information Analysis Service
+# Running Information Analysis Service
 
 It is a web service to populate running information.
 
@@ -24,13 +24,13 @@ public class UserInfo {
     private String address;
 }
 ```
-##Deployment
+## Deployment
 
-###What you need
+### What you need
 
 Maven and Java
 
-###Steps
+### Steps
 
 1. Choose the database you want to use. For H3, everything is fine. For MySQL, install it by yourself or run 
 ```bash
@@ -50,11 +50,11 @@ java -jar [jar-file-compiled by Maven]
 ```
 The default place for the jar file is in the "./target" folder.
 
-##API
+## API
 
 All API are implemented in RESTful style. All data operation can be achieved by http request.
 
-###Insert
+### Insert
 
 Send POST request to http://localhost:8080/running_info
 The request body example is followed.
@@ -89,17 +89,17 @@ The request body example is followed.
 ]
 ```
 
-###Delete
+### Delete
 
 If you want to delete all data, send delete request to http://localhost:8080/running_info
 
 If you want to delete data with specified ID, send delete request to http://localhost:8080/running_info/{ID_to_delete}
 
-###Modify
+### Modify
 
 It rare so I didn't implement it. You can achieve it by deleting and adding a new one.
 
-###Query
+### Query
 
 Query can be done by sending GET request to http://localhost:8080/running_info/{searching_id}?page=0&size=10
 
